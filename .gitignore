@@ -1,0 +1,9 @@
+*~
+*.bak
+.DS_Store
+
+.node-version
+.clasp.json
+/dist
+!/dist/.keep
+/node_modules/

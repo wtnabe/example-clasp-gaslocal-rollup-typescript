@@ -1,0 +1,34 @@
+{
+  "engines": {
+    "node": ">= 10"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.3.0",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@types/google-apps-script": "^1.0.17",
+    "eslint": "^7.13.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "gas-local": "^1.3.1",
+    "husky": "^4.3.0",
+    "intelli-espower-loader": "^1.0.1",
+    "lint-staged": "^10.5.1",
+    "lodash.get": "^4.4.2",
+    "mocha": "^8.2.1",
+    "npm-run-all": "^4.1.5",
+    "power-assert": "^1.6.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.33.1",
+    "sinon": "^9.2.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist/*",
+    "importpkg": "rollup -c",
+    "lint": "eslint .",
+    "runMocha": "NODE_PATH=./dist mocha --require intelli-espower-loader test/**/*.spec.js",
+    "test": "npm-run-all -s build runMocha"
+  }
+}
