@@ -2,10 +2,15 @@
   "compilerOptions": {
     "target": "es2015",
     "lib": ["es2015"],
+    "experimentalDecorators": true,
     "allowJs": true,
     "module": "None",
     "outDir": "./dist/",
+    "types": [
+      "google-apps-script"
+    ],
     "typeRoots": [
+      "./src/types",
       "./node_modules/@types"
     ]
   },
